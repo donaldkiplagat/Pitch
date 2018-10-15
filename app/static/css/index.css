@@ -1,7 +1,25 @@
 body{
   background-image: url("black.jpg");
 }
+p{
+  font-size: 20px;
+  font-family: 'Slabo 27px', serif;
+}
+h2{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Indie Flower', cursive;
+}
+h4{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Loved by the King', cursive;
 
+}
+
+a{
+  font-size: 20px;
+}
 .jumbotron {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -16,7 +34,5 @@ body{
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
-    text-shadow: black 0.9em 0.9em 0.9em;
 
 }
