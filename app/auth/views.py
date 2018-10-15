@@ -20,7 +20,6 @@ def login():
     title ="Pitch Login"
     return render_template('auth/login.html',login_form=login_form,title=title)
 
-
 @auth.route('/logout')
 @login_required
 def logout():
