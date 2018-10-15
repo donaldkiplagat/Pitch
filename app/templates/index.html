@@ -5,6 +5,7 @@
 {% block styles%}
     {{ super() }}
     <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <link rel="shortcut icon" href="https://icon2.kisspng.com/20180320/upw/kisspng-computer-icons-idea-incandescent-light-bulb-clip-a-black-idea-icon-5ab0cae1715936.7716735415215357134643.jpg">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 
 {% endblock %}
@@ -23,7 +24,9 @@
        <div class="panel-body">
            <h5>Title: {{ pitch.pitch_title }}</h5>
            <p>{{ pitch.pitch_body }}</p>
-           <a href="/pitch_review/{{pitch.id}}?like=1">Like: </a><p>{{pitch.like}}</p><a href="/pitch_review/{{pitch.id}}?dislike=1">Dislike: </a></p>{{ pitch.dislike}}</p>
+           <i class="fas fa-thumbs-up"></i>
+           <a href="/pitch_review/{{pitch.id}}?like=1">Like: </a><p>{{pitch.like}}</p>
+           <a href="/pitch_review/{{pitch.id}}?dislike=1">Dislike: </a></p>{{ pitch.dislike}}</p>
            <p>Posted at: {{ pitch.posted.strftime('%Y-%m-%d')}}</p>
            <p>Posted by: {{ pitch.user.username}}</p>
            <p>Category: {{ pitch.category}}</p>
