@@ -1,30 +1,40 @@
-# NewsHighlight
+# Pitch
 
-This python web-app was created in order to retrieve news information using an API.Developed during Moringa Core. This is Week 4's Independent Project.
-Date: 5th October 2018
+This python web-app was created in order to allow users to pitch their ideas and have them voted on.Developed during Moringa Core. This is Week 5's Independent Project.
+Date: 12th October 2018
 By: Donald Kiplagat
 
 ## Description
-This web-app allows the user to choose news from a particular source and view the articles within that source.
+This web-app allows the user to submit their pitches,have them voted and commented upon.
 
 ## Setup/Installation Requirements
-* Live site can be accessed from the following link https://newshighlight-donald.herokuapp.com/
+* Live site can be accessed from the following link https://pitch-donald.herokuapp.com/
 
 
 ### Known Bugs
-Some sources have no news thus the page will be blank.
-The panels are sometimes irregular due to different image/description sizes.
+The panels are sometimes irregular due to different pitch sizes.
+One can like/dislike as many times as possible,not once for each user as was intended
 
 ### Behaviour Driven Development
-* The program should return a source's articles when chosen.<br>
-Given: Sources are available<br>
-When: A source is chosen<br>
-Then: Articles from that source are shown<br>
+* The program should return all pitches on the home page<br>
+Given:All pitches<br>
+When: View is changed to home page<br>
+Then: Pitches from all users are shown<br>
 
-* The program should display images related to the articles<br>
-Given:A source is chosen<br>
-When: Articles section loads <br>
-Then: Images should be displayed<br>
+* One should receive an email when signing up<br>
+Given:A sign up feature<br>
+When: User successfully signs up <br>
+Then: Email is sent to the email registered with<br>
+
+* The program should display a user's profile picture<br>
+Given: A choice to upload a profile picture<br>
+When: User uploads profile picture<br>
+Then: The image should be displayed to the user<br>
+
+* Votes should be recorded and displayed to all the users<br>
+Given:A like/dislike option is given<br>
+When: User likes/dislikes a pitch <br>
+Then: The value is added to the number of likes/dislikes<br>
 
 
 ### Technologies Used
@@ -40,4 +50,4 @@ Then: Images should be displayed<br>
 
 ### License
 Moringa School
-Copyright (c)2018 **NewHighlight by Yours Truly-Donald Kiplagat**
+Copyright (c)2018 **Pitch by Yours Truly-Donald Kiplagat**
