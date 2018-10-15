@@ -38,9 +38,17 @@
             <a href="/pitch_review/{{pitch.id}}?dislike=1"> <i  class="fas fa-thumbs-down">  {{ pitch.dislike}}</i></a>
            </div>
            </div>
-           <p>Posted at: {{ pitch.posted.strftime('%Y-%m-%d')}}</p>
-           <p>Posted by: {{ pitch.user.username}}</p>
+
+           <blockquote >
+             <footer>Posted by:
+               <cite > {{ pitch.user.username}}</cite>
+               on
+               <cite > {{ pitch.posted.strftime('%Y-%m-%d')}}</cite>
+             </footer>
+           </blockquote>
+           <div class="text-center">
            <a href="/pitch_review/{{pitch.id}}" class="btn btn-primary">Comment</a>
+         </div>
          </div>
        </div>
      </div>

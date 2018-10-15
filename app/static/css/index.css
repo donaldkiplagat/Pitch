@@ -14,7 +14,6 @@ h4{
   text-align: center;
   font-size: 30px;
   font-family: 'Loved by the King', cursive;
-
 }
 
 a{
@@ -29,10 +28,13 @@ a{
 
     background-image: url("pitch2.png");
 
-
     background-position: 0% 7%;
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
 
+}
+#post-form{
+  float: right;
+  margin-right: 32%;
 }
