@@ -71,8 +71,6 @@ def pitch_review(id):
     reviews = Review.query.all()
     return render_template('pitch_review.html',comment=comment,pitch=pitch,review_form=form,reviews=reviews)
 
-
-
 @main.route('/user/<uname>')
 def profile(uname):
     user=User.query.filter_by(username=uname).first()
