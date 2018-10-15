@@ -1,22 +1,21 @@
-# NewsHighlight
+# Pitch
 
 ## Setup/Installation Requirements
-* Live site can be accessed from the following link https://newshighlight-donald.herokuapp.com/
+* Live site can be accessed from the following link https://pitch-donald.herokuapp.com/
 
 ### Known Bugs
-Some sources have no news thus the page will be blank.
-The panels are sometimes irregular due to different image/description sizes.
+The panels are sometimes irregular due to different pitch sizes.
 
 ### Behaviour Driven Development
-* The program should return a source's articles when chosen.<br>
-Given: Sources are available<br>
-When: A source is chosen<br>
-Then: Articles from that source are shown<br>
+* The program should return all pitches on the home page<br>
+Given:All pitches<br>
+When: View is changed to home page<br>
+Then: Pitches from all users are shown<br>
 
-* The program should display images related to the articles<br>
-Given:A source is chosen<br>
-When: Articles section loads <br>
-Then: Images should be displayed<br>
+* One should receive an email when signing up<br>
+Given:A sign up feature<br>
+When: User successfully signs up <br>
+Then: Email is sent to the email registered with<br>
 
 
 ### Technologies Used
@@ -28,4 +27,4 @@ Then: Images should be displayed<br>
 
 ### License
 Moringa School
-Copyright (c)2018 **NewHighlight by Yours Truly-Donald Kiplagat**
+Copyright (c)2018 **Pitch by Yours Truly-Donald Kiplagat**
