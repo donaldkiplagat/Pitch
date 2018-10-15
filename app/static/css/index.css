@@ -38,3 +38,12 @@ a{
   float: right;
   margin-right: 32%;
 }
+#bio{
+  font-size: 50%;
+  float: left;
+  margin-left: 3%;
+  font-weight: bold;
+}
+#register,#login{
+  font-size: 18px;
+}
