@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
+
+<!-- Styles block -->
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+{% endblock %}
+
+
+{% block content %}
+<h1>Home Page Works</h1>
+<a href="/post">Post Redirect</a>
+<br>
+<div class="container">
+
+  {% for pitch in pitches  %}
+  <!-- <div class="row"> -->
+  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+       <div class="panel">
+       <div class="panel-body">
+           <h5>Title: {{ pitch.pitch_title }}</h5>
+           <p>{{ pitch.pitch_body }}</p>
+           <a href="/pitch_review/{{pitch.id}}?like=1">Like: </a><p>{{pitch.like}}</p><a href="/pitch_review/{{pitch.id}}?dislike=1">Dislike: </a></p>{{ pitch.dislike}}</p>
+           <p>Posted at: {{ pitch.posted.strftime('%Y-%m-%d')}}</p>
+           <p>Posted by: {{ pitch.user.username}}</p>
+           <p>Category: {{ pitch.category}}</p>
+           <a href="/pitch_review/{{pitch.id}}" class="btn btn-primary">Comment</a>
+         </div>
+       </div>
+     </div>
+   </div>
+   {% endfor %}
+{% endblock %}
