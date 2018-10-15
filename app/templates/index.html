@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
     <link rel="shortcut icon" href="https://icon2.kisspng.com/20180320/upw/kisspng-computer-icons-idea-incandescent-light-bulb-clip-a-black-idea-icon-5ab0cae1715936.7716735415215357134643.jpg">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
 {% endblock %}
 
 
 {% block content %}
+<div class="jumbotron">
+</div>
 <h1>Home Page Works</h1>
 <a href="/post">Post Redirect</a>
 <br>
-<div class="container">
 
   {% for pitch in pitches  %}
-  <!-- <div class="row"> -->
   <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
        <div class="panel">
        <div class="panel-body">
@@ -34,6 +35,5 @@
          </div>
        </div>
      </div>
-   </div>
    {% endfor %}
 {% endblock %}

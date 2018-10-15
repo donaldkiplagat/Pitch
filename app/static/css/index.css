@@ -1,4 +1,22 @@
 body{
   background-image: url("black.jpg");
 }
-/*
+
+.jumbotron {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height:140px;
+    width: 550px;
+    margin: auto;
+
+    background-image: url("pitch2.png");
+
+
+    background-position: 0% 7%;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.9em 0.9em 0.9em;
+
+}
